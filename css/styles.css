@@ -11191,3 +11191,46 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.imagen404 {
+  opacity: 0.5;
+  border-radius: 20px;
+}
+
+#botonMeGusta {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#botonMeGusta.meGusta {
+  background-color: red;
+  color: white;
+}
+
+#botonMeGusta1 {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#botonMeGusta1.meGusta {
+  background-color: red;
+  color: white;
+}
+#botonMeGusta2 {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#botonMeGusta2.meGusta {
+  background-color: red;
+  color: white;
+}

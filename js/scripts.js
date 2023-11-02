@@ -44,3 +44,15 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+function cambiarColor() {
+    var boton = document.getElementById("botonMeGusta");
+    boton.classList.toggle("meGusta");
+  }
+function cambiarColor1() {
+    var boton = document.getElementById("botonMeGusta1");
+    boton.classList.toggle("meGusta");
+  }
+function cambiarColor2() {
+    var boton = document.getElementById("botonMeGusta2");
+    boton.classList.toggle("meGusta");
+  }
