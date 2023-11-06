@@ -23,17 +23,33 @@ const botonReproducir = document.getElementById("reproducir");
 const botonPausar = document.getElementById("pausar");
 const botonDetener = document.getElementById("detener");
 
-// Función para reproducir la música
+//Reproducir la música
 botonReproducir.addEventListener("click", function() {
   miMusica.play();
 });
 
-// Función para pausar la música
+//Pausar la música
 botonPausar.addEventListener("click", function() {
   miMusica.pause();
 });
 
-// Función para detener la música y volver al principio
+//Detener la música y volver al principio
+botonDetener.addEventListener("click", function() {
+  miMusica.pause();
+  miMusica.currentTime = 0;
+});
+
+//Reproducir la música 2
+botonReproducir.addEventListener("click", function() {
+  miMusica.play();
+});
+
+//Pausar la música 2
+botonPausar.addEventListener("click", function() {
+  miMusica.pause();
+});
+
+//Detener la música y volver al principio 2
 botonDetener.addEventListener("click", function() {
   miMusica.pause();
   miMusica.currentTime = 0;
