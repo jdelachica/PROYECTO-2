@@ -1,0 +1,40 @@
+{
+  "canciones": [
+    {
+      "id": 1,
+      "titulo": "Luces de Neón",
+      "artista": "Frida con Calor",
+      "genero": "Rock"
+    },
+    {
+      "id": 2,
+      "titulo": "In your Hands",
+      "artista": "El conejo Malo",
+      "genero": "Balada"
+    },
+    {
+      "id": 3,
+      "titulo": "At Firs Sight",
+      "artista": "El conejo Malo",
+      "genero": "Pop-Rock"
+    },
+    {
+      "id": 4,
+      "titulo": "A Day to Remenber",
+      "artista": "Lady GluGlu",
+      "genero": "Funk"
+    },
+    {
+      "id": 5,
+      "titulo": "Nation",
+      "artista": "H2O",
+      "genero": "Electronica"
+    },
+    {
+      "id": 6,
+      "titulo": "Route 66",
+      "artista": "Willy Fox",
+      "genero": "Pop-Rock"
+    }
+  ]
+}
