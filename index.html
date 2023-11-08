@@ -26,12 +26,11 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Empieza a escuchar</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Playlists</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">LOGIN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
@@ -55,6 +54,9 @@
                 </div>
                 <section>
                     <div class="container px-4 px-lg-5">
+                        <ul class="text-white" id="canciones-seleccionadas">
+                            <!-- Mostrar las canciones seleccionadas aquí -->
+                        </ul>
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-4 mb-3 mb-md-4">
                                 <div class="card py-4 h-100">
@@ -69,7 +71,7 @@
                                         <button id="detener">Detener</button>
                                         <button class="my-2" id="botonMeGusta" onclick="cambiarColor()">
                                             <i class="fas fa-heart"></i> Me Gusta
-                                          </button>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +88,7 @@
                                         <button id="detener">Detener</button>
                                         <button class="my-2" id="botonMeGusta1" onclick="cambiarColor1()">
                                             <i class="fas fa-heart"></i> Me Gusta
-                                          </button>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +105,7 @@
                                         <button id="detener">Detener</button>
                                         <button class="my-2" id="botonMeGusta2" onclick="cambiarColor2()">
                                             <i class="fas fa-heart"></i> Me Gusta
-                                          </button>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -186,27 +188,16 @@
                         <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Escribe aquí tu mail" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Suscribete</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
                         </form>
                     </div>
