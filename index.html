@@ -55,7 +55,7 @@
                 </div>
                 <section>
                     <div class="container px-4 px-lg-5">
-                        <ul class="text-white" id="canciones-seleccionadas">
+                        <ul class="text-white-50" id="canciones-seleccionadas">
                             <!-- Mostrar las canciones seleccionadas aquí -->
                         </ul>
                         <div class="row gx-4 gx-lg-5">
@@ -261,7 +261,7 @@
                                 <img class=" mb-2 width="150" height="150" align="center" src="assets/img/4139951.png"></i>
                                 <h4 class="text-uppercase m-0">Natalia Galeano</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Full stack<br><a href="#!">soysofia@musicinspire.com</a></div>
+                                <div class="small text-black-50">Full stack<br><a href="#!">soynaty@musicinspire.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,43 @@
         </section>
         <!-- Footer-->
         <footer>
+            <script>
+                // Obtener las canciones seleccionadas del almacenamiento local y mostrarlas en la página principal
+                const cancionesSeleccionadas = JSON.parse(localStorage.getItem("cancionesSeleccionadas")) || [];
+        
+                const cancionesSeleccionadasList = document.getElementById("canciones-seleccionadas");
+        
+                // Cargar el listado de canciones desde el archivo JSON
+                fetch("cancionesJSON/topCanciones.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        data.canciones.forEach(cancion => {
+                            if (cancionesSeleccionadas.includes(cancion.id.toString())) {
+                                const li = document.createElement("li");
+                                li.textContent = `${cancion.titulo} - ${cancion.artista}`;
+                                cancionesSeleccionadasList.appendChild(li);
+                            }
+                        });
+                    });
 
+                    // Elementos del DOM
+                    const miMusica = document.getElementById("miMusica");
+                    const botonReproducir = document.getElementById("reproducir");
+                    const botonPausar = document.getElementById("pausar");
+                    const botonDetener = document.getElementById("detener");
+
+                        //Reproducir la música
+                    botonReproducir.addEventListener("click", function() {
+                     miMusica.play();
+                        });
+                    botonPausar.addEventListener("click", function() {
+                    miMusica.pause();
+                    });
+                    botonDetener.addEventListener("click", function() {
+                    miMusica.pause();
+                    miMusica.currentTime = 0;
+                    });
+            </script>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
