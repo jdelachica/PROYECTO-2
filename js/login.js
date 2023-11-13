@@ -39,3 +39,12 @@
               alert("Registro exitoso. Ahora puedes iniciar sesión.");
           }
       });
+      document.getElementById('register-form').addEventListener('submit', function (e) {
+        var password = document.getElementById('new-password').value;
+        if (password.length < 8) {
+            e.preventDefault();
+            document.getElementById('password-error').innerText = 'La contraseña debe tener al menos 8 caracteres.';
+        } else {
+            document.getElementById('password-error').innerText = '';
+        }
+    });

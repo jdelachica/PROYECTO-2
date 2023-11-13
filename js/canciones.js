@@ -16,7 +16,7 @@ fetch("cancionesJSON/topCanciones.json")
 
 // Al hacer clic en el botón "Guardar Selección", guardar las canciones seleccionadas en el almacenamiento local
 const guardarSeleccionButton = document.getElementById("guardar-seleccion");
-  guardarSeleccionButton.addEventListener("click", function() {
+  guardarSeleccionButton.addEventListener("click", function() {Ω
     const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     const cancionesSeleccionadas = Array.from(checkboxes).map(checkbox => checkbox.value);
     localStorage.setItem("cancionesSeleccionadas", JSON.stringify(cancionesSeleccionadas));

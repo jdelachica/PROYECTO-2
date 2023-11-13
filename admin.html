@@ -24,9 +24,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">Empieza a escuchar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Playlists</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Empieza a escuchar</a></li>
                         <li class="nav-item"><a class="nav-link" href="">LOGIN</a></li> 
                         <button class="btn btn-danger" onclick="cerrarSesion()">Cerrar Sesión</button>
                     </ul>
@@ -47,8 +45,7 @@
         <section class="contact-section bg-black">
             <ul class="text-white-50" id="canciones-list">
                 <!-- Mostrar la lista de canciones y permitir seleccionarlas -->
-
-                <button class="btn btn-primary" href="login.html" id="guardar-seleccion">Guardar Selección</button>
+                <button id="guardar-seleccion" class="btn btn-primary" href="index.html" >Guardar Selección</button>
                 <style>
                   body {
                     font-family: Arial, sans-serif;
@@ -88,20 +85,16 @@
                     </thead>
                     <tbody id="tablaCanciones">
                       <!-- Aquí se llenarán dinámicamente las canciones -->
-              </tbody>
+                    </tbody>
                   </table>
                       <div class="social d-flex justify-content-center py-4">
                           <button class="btn btn-primary" href="login.html">Volver a la página de inicio</button>
                       </div>
                   </div>
-              
-      
-            </ul>
-                <div class="social d-flex justify-content-center py-4">
-                    <button class="btn btn-primary" href="login.html">Volver a la página de inicio</button>
-                </div>
-            </div>
-            <style>
+
+
+              </section>
+          <style>
             body {
               font-family: Arial, sans-serif;
             }
@@ -126,37 +119,20 @@
           </style>
         </head>
         <body>
-      
-        <div id="adminPanel">
-            <h2>Tabla de Canciones</h2>
-        <table>
-              <thead style="color: #e9e9e9;">
-                <tr>
-                  <th>ID</th>
-                  <th>Canción</th>
-                  <th>Artista</th>
-                  <th>Acciones</th>
-                </tr>
-              </thead>
-              <tbody id="tablaCanciones">
-                <!-- Aquí se llenarán dinámicamente las canciones -->
-        </tbody>
-            </table>
-               
-
       </section>
       </main>
       <footer>
 
       </footer>
       <script src="cancionesJSON/app.js"></script>
+      <script src="cancionesJSON/topCanciones.json"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="js/scripts.js"></script>
       <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+      <script src="login.html"></script>
+      <script src="js/canciones.js"></script>
       <script src="js/global.js"></script>
-    <script src="login.html"></script>
   </body>
 </html>
-      <script src="login.html"></script>
       
  
