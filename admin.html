@@ -47,6 +47,7 @@
         <section class="contact-section bg-black">
             <ul class="text-white-50" id="canciones-list">
                 <!-- Mostrar la lista de canciones y permitir seleccionarlas -->
+
                 <button class="btn btn-primary" href="login.html" id="guardar-seleccion">Guardar Selección</button>
                 <style>
                   body {
@@ -95,16 +96,67 @@
                   </div>
               
       
+            </ul>
+                <div class="social d-flex justify-content-center py-4">
+                    <button class="btn btn-primary" href="login.html">Volver a la página de inicio</button>
+                </div>
+            </div>
+            <style>
+            body {
+              font-family: Arial, sans-serif;
+            }
+        
+            #adminPanel {
+              max-width: 600px;
+              margin: 20px auto;
+            }
+        
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 20px;
+            }
+        
+            th, td {
+              border: 3px solid #e9e9e9;
+              padding: 8px;
+              text-align: center;
+              color: white;
+            }
+          </style>
+        </head>
+        <body>
+      
+        <div id="adminPanel">
+            <h2>Tabla de Canciones</h2>
+        <table>
+              <thead style="color: #e9e9e9;">
+                <tr>
+                  <th>ID</th>
+                  <th>Canción</th>
+                  <th>Artista</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="tablaCanciones">
+                <!-- Aquí se llenarán dinámicamente las canciones -->
+        </tbody>
+            </table>
+               
+
       </section>
       </main>
       <footer>
 
       </footer>
-      <script src="js/canciones.js"></script>
+      <script src="cancionesJSON/app.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="js/scripts.js"></script>
       <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
       <script src="js/global.js"></script>
-      <script src="cancionesJSON/app.js"></script>
+    <script src="login.html"></script>
   </body>
 </html>
+      <script src="login.html"></script>
+      
+ 
